@@ -1,5 +1,11 @@
 const readBtn = document.getElementById("readBtn");
+const openMessage = document.getElementById("openMessage");
+const dropdownMessage = document.getElementById("dropdownMessage");
 
 readBtn.addEventListener("click", () => {
-    alert("clicked")
+    
+})
+
+dropdownMessage.addEventListener("click", () => {
+    openMessage.toggleAttribute("show");
 })

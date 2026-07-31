@@ -107,6 +107,15 @@ margin-left: 7px;
 font-weight: bold;
 }
 
+.open-message {
+  border: 1px solid var(--neutral-blue-100);
+  padding: 1rem;
+  color: var(--neutral-gray-600);
+  display: none;
+}
+
+
+
 .read-button {
   font-weight: normal;
   font-size: var(--font-medium);
@@ -117,3 +126,8 @@ font-weight: bold;
 .read {
   background-color: var(--neutral-gray-500);
 }
+
+.time {
+  color: var(--neutral-gray-500);
+}
+
