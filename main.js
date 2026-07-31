@@ -7,5 +7,11 @@ readBtn.addEventListener("click", () => {
 })
 
 dropdownMessage.addEventListener("click", () => {
-    openMessage.toggleAttribute("show");
+
+    openMessage.toggleAttribute("none");
+    
 })
+
+function readMessage() {
+
+}

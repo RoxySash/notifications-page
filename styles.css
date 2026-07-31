@@ -76,6 +76,13 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 1rem;
 }
 
+.flextop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
 .flexrow {
     display: flex;
     flex-direction: row;
@@ -95,7 +102,10 @@ h1 {
     color: var(--neutral-navy-950);
 }
 
-
+.chess {
+  color: var(--primary-blue950);
+  font-weight: bold;
+}
 
 .message-count {
 width: 20px;
@@ -114,7 +124,18 @@ font-weight: bold;
   display: none;
 }
 
+.message {
+  cursor: pointer;
+  background-color: var(--neutral-blue-100);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  
+}
 
+.avatar {
+  margin-right: 0.6rem;
+}
 
 .read-button {
   font-weight: normal;
