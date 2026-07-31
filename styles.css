@@ -101,12 +101,23 @@ h1 {
     font-size: var(--font-medium);
     color: var(--neutral-navy-950);
 }
+.profilename {
+  color: var(--neutral-navy-950);
+  font-weight: bold;
+}
+
 
 .chess {
   color: var(--primary-blue950);
   font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+}
+p{
+  color: var(--neutral-gray-600)
+}
 .message-count {
 width: 20px;
 height: 20px;
