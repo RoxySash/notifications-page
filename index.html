@@ -11,40 +11,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
  <script src="main.js" defer></script>
 </head>
 <body>
   <header class="notif-header flexrowspace">
-    <h1>Notifications</h1> <div class="message-count" id="messageCount">3</div>
+    <div class="flexrow">
+      <h1>Notifications</h1> <div class="message-count flexrow" id="messageCount">3</div>
+    </div>
 
-  <h2>Mark all as read</h2>
+  <h2 class="read-button" id="readBtn">Mark all as read</h2>
   </header>
 <main class="container">
   
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+  <div>
+    Mark Webber reacted to your recent post My first tournament today!
+    <p>1m ago</p>
+  </div>
 
-  Angela Gray followed you
-  5m ago
+  <div>
+    Angela Gray followed you
+    <p>5m ago</p>
+  </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+  <div>
+    Jacob Thompson has joined your group Chess Club
+    <p>1 day ago</p>
+  </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+  <div>
+    Rizky Hasanuddin sent you a private message
+    <p>5 days ago</p>
+  </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+  <div class="open-message" id="openMessage">
+    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+    I'm already having lots of fun and improving my game.
+  </div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+  <div>
+    Kimberly Smith commented on your picture
+    <p>1 week ago</p>
+  </div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
+  <div>
+    Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+    <p>2 weeks ago</p>
+  </div>
+
+  <div>
+    Anna Kim left the group Chess Club
+    <p>2 weeks ago</p>
+  </div>
   
   </main>
 </body>
