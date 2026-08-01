@@ -33,13 +33,15 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-  background-color: var(--neutral-blue-100);
+  background-color: var(--neutral-white);
   font-size: clamp(0.45rem, 2.5vw, 0.9rem);
   font-family: var(--font-main);
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+ 
 	
 }
 
@@ -72,7 +74,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .container {
-  margin: 2rem;
+
   background-color: var(--neutral-white);
   padding: 1rem;
   border-radius: 6px;
@@ -80,13 +82,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .notif-header {
   margin: 1rem;
+  
 }
 
 .flextop {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .flexrow {
@@ -104,7 +107,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .chess-pic {
   float: right;
+  margin-left: 6rem;
+  margin-right: 0;
 }
+
 h1 {
     font-size: var(--font-medium);
     color: var(--neutral-navy-950);
@@ -112,12 +118,13 @@ h1 {
 .profilename {
   color: var(--neutral-navy-950);
   font-weight: bold;
+  
 }
-
 
 .chess {
   color: var(--primary-blue950);
   font-weight: bold;
+  
 }
 
 .bold {
@@ -141,6 +148,8 @@ font-weight: bold;
   padding: 1rem;
   color: var(--neutral-gray-600);
   display: none;
+  margin-bottom: 1rem;
+  margin-left: 50px;
 }
 
 .message {
@@ -170,9 +179,30 @@ font-weight: bold;
 .time {
   color: var(--neutral-gray-500);
 }
+.red-dot {
+  background-color: var(--primary-red500);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  display: inline-block;
+}
 
-@media (min-width: 30rem) {
+.read {
+  background-color: var(--neutral-white);
+}
+
+@media (min-width: 27rem) {
   .container {
     max-width: 35rem;
   }
+  body {
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-blue-100);
+  }
+
+
 }
