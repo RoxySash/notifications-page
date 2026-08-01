@@ -3,11 +3,11 @@ const openMessage = document.getElementById("openMessage");
 const dropdownMessage = document.getElementById("dropdownMessage");
 
 const messageCount = document.getElementById("messageCount");
-const message = document.querySelectorAll(".message");
+const messages = document.querySelectorAll(".message");
 const redDot = document.querySelectorAll(".red-dot");
 
 let count = 7;
-messageCount.innerHTML = count;
+messageCount.textContent = count;
 
 dropdownMessage.addEventListener("click", () => {
   if (openMessage.style.display === "none") {
@@ -17,10 +17,17 @@ dropdownMessage.addEventListener("click", () => {
   }
 
   dropdownMessage.style.backgroundColor = "white";
+  const dot = dropdownMessage.querySelector(".red-dot");
+
+if (dot) {
+  dot.style.display = "none";
+}
+
 });
 
+
 readBtn.addEventListener("click", () => {
-  message.forEach((element) => {
+  messages.forEach((element) => {
     element.style.backgroundColor = "white";
   });
 
@@ -29,5 +36,19 @@ readBtn.addEventListener("click", () => {
   });
 
   count = 0;
-  messageCount.innerHTML = count;
+  messageCount.textContent = count;
+});
+
+function updateCount() {
+  messageCount.textContent = count;
+}
+
+messages.forEach((msg) => {
+  msg.addEventListener("click", () => {
+    if (msg.dataset.read === "true") return;
+
+    msg.dataset.read = "true";
+    count--;
+    updateCount();
+  });
 });
