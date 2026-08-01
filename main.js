@@ -1,7 +1,7 @@
 const readBtn = document.getElementById("readBtn");
 const openMessage = document.getElementById("openMessage");
 const dropdownMessage = document.getElementById("dropdownMessage");
-
+const redFour = document.querySelector(".redfour");
 const messageCount = document.getElementById("messageCount");
 const message = document.querySelectorAll(".message");
 const redDot = document.querySelectorAll(".red-dot");
@@ -15,14 +15,9 @@ dropdownMessage.addEventListener("click", () => {
   } else {
     openMessage.style.display = "none";
   }
-});
 
-function updateCount() {
-  if (message.classList.contains("visited")) {
-    count--;
-    messageCount.innerHTML = count;
-  }
-}
+  dropdownMessage.style.backgroundColor = "white";
+});
 
 readBtn.addEventListener("click", () => {
   message.forEach((element) => {
