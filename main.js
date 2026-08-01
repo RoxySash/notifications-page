@@ -19,12 +19,10 @@ dropdownMessage.addEventListener("click", () => {
   dropdownMessage.style.backgroundColor = "white";
   const dot = dropdownMessage.querySelector(".red-dot");
 
-if (dot) {
-  dot.style.display = "none";
-}
-
+  if (dot) {
+    dot.style.display = "none";
+  }
 });
-
 
 readBtn.addEventListener("click", () => {
   messages.forEach((element) => {
@@ -48,7 +46,15 @@ messages.forEach((msg) => {
     if (msg.dataset.read === "true") return;
 
     msg.dataset.read = "true";
+
     count--;
     updateCount();
+    msg.style.backgroundColor = "white";
+
+  const dot = msg.querySelector(".red-dot");
+
+  if (dot) {
+    dot.style.display = "none";
+  }
   });
 });
