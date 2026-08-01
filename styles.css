@@ -33,10 +33,13 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-  background-color: var(--neutral-white);
+  background-color: var(--neutral-blue-100);
   font-size: clamp(0.45rem, 2.5vw, 0.9rem);
   font-family: var(--font-main);
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 	
 }
 
@@ -70,6 +73,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .container {
   margin: 2rem;
+  background-color: var(--neutral-white);
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .notif-header {
@@ -96,7 +102,9 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-
+.chess-pic {
+  float: right;
+}
 h1 {
     font-size: var(--font-medium);
     color: var(--neutral-navy-950);
@@ -123,7 +131,7 @@ width: 20px;
 height: 20px;
 background-color: var(--primary-blue950);
 color: var(--neutral-white);
-border-radius: 3px;
+border-radius: 6px;
 margin-left: 7px;
 font-weight: bold;
 }
@@ -163,3 +171,8 @@ font-weight: bold;
   color: var(--neutral-gray-500);
 }
 
+@media (min-width: 30rem) {
+  .container {
+    max-width: 35rem;
+  }
+}
