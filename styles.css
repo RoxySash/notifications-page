@@ -188,9 +188,11 @@ font-weight: bold;
   display: inline-block;
 }
 
-.read {
+
+.message:visited {
   background-color: var(--neutral-white);
 }
+
 
 @media (min-width: 27rem) {
   .container {
