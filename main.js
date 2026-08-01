@@ -51,10 +51,10 @@ messages.forEach((msg) => {
     updateCount();
     msg.style.backgroundColor = "white";
 
-  const dot = msg.querySelector(".red-dot");
+    const dot = msg.querySelector(".red-dot");
 
-  if (dot) {
-    dot.style.display = "none";
-  }
+    if (dot) {
+      dot.style.display = "none";
+    }
   });
 });
