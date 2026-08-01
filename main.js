@@ -1,7 +1,7 @@
 const readBtn = document.getElementById("readBtn");
 const openMessage = document.getElementById("openMessage");
 const dropdownMessage = document.getElementById("dropdownMessage");
-const redFour = document.querySelector(".redfour");
+
 const messageCount = document.getElementById("messageCount");
 const message = document.querySelectorAll(".message");
 const redDot = document.querySelectorAll(".red-dot");
